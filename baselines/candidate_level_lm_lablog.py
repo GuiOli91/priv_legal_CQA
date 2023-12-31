@@ -14,7 +14,7 @@ Sampling = False
 CANDIDATE_LEVEL_FIELD = "ef_legal_user_level"
 CANDIDATE_LEVEL_INDEX = "content"
 COUNT_OF_EXPERTS = 3741
-queries_path = "../data/queries_bankruptcy.csv"
+queries_path = "data/queries_bankruptcy.csv"
 queries = open(queries_path, "r").read().splitlines()
 
 if Sampling:
