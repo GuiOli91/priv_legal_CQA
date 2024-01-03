@@ -1,0 +1,29 @@
+<mxfile host="app.diagrams.net" modified="2024-01-03T12:23:43.687Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:121.0) Gecko/20100101 Firefox/121.0" version="22.1.15" etag="AEL_gtJ1k4BUjqcP4HoT" type="github">
+  <diagram name="Page-1" id="ED7X46P2vUTsCEac2As0">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Python script" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry width="108" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Elastic server" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="158" width="111" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Database" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="319" width="84" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.9953703703703703;exitY=0.5;entryX=-0.0045045045045045045;entryY=0.5;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.9957957912135769;exitY=0.5;entryX=-0.0055555616106305805;entryY=0.5;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
