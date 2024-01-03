@@ -22,6 +22,11 @@ if Sampling:
 
 
 def get_all_exerpts():
+    """_summary_
+
+    Returns:
+        _type_: _description_
+    """
     es = elasticsearch()
     bool_query = {
         "size": 10000,
@@ -44,6 +49,14 @@ def get_all_exerpts():
 
 
 def find_an_expert_id_that_has_specific_query_term(term):
+    """_summary_
+
+    Args:
+        term (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """
     es = elasticsearch()
     term = term.lower()
     bool_query = {

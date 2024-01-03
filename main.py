@@ -1,4 +1,11 @@
-from baselines import candidate_level_lm_lablog as cand
+# from baselines import candidate_level_lm_lablog as cand
 
-a = cand.get_all_exerpts()
-print(a)
+
+def main():
+
+    print("Main!")
+
+
+if __name__ == '__main__':
+    main()
+    print("Done!")
