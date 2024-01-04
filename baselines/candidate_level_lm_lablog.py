@@ -23,9 +23,10 @@ if Sampling:
 
 def get_all_exerpts():
     """_summary_
+    Retrieves all excerpts from the candidate level.
 
     Returns:
-        _type_: _description_
+        str: The ID of the first candidate's excerpt.
     """
     es = elasticsearch()
     bool_query = {
@@ -50,12 +51,13 @@ def get_all_exerpts():
 
 def find_an_expert_id_that_has_specific_query_term(term):
     """_summary_
+    Searches for an expert that contains a specific query term at the candidate level.
 
     Args:
-        term (_type_): _description_
+        term (str): The query term to search for.
 
     Returns:
-        _type_: _description_
+        str: The expert ID of the expert containing the specified query term.
     """
     es = elasticsearch()
     term = term.lower()
@@ -70,6 +72,16 @@ def find_an_expert_id_that_has_specific_query_term(term):
 
 
 def get_p_tc(query_input_term):
+    """
+    Calculates the probability of a query term at the candidate level.
+
+    Args:
+        query_input_term (str): The query term for which the probability is calculated.
+
+    Returns:
+        float: The probability of the query term at the candidate level.
+    """
+
     query_input_term = query_input_term.lower()
     expert_id_for_calculate_stats = find_an_expert_id_that_has_specific_query_term(
         query_input_term
@@ -93,6 +105,16 @@ def get_p_tc(query_input_term):
 
 
 def get_lambda_expert(expert_id):
+    """
+    Calculates the lambda value at the expert level.
+
+    Args:
+        expert_id (str): The ID of the expert for whom the lambda value is calculated.
+
+    Returns:
+        float: The lambda value at the expert level.
+    """
+
     body = {
         "fields": [CANDIDATE_LEVEL_FIELD],
         "offsets": True,
@@ -118,6 +140,17 @@ def get_lambda_expert(expert_id):
 
 
 def get_expert_score_per_term(query, expert_id):
+    """
+    Calculates the expert score for a specific query term.
+
+    Args:
+        query (str): The query for which the expert score is calculated.
+        expert_id (str): The ID of the expert for whom the score is calculated.
+
+    Returns:
+        float or str: The expert score for the specific query term, or "False" if an exception occurs.
+    """
+
     query_input = query.lower()
     query_term_p_tc = get_p_tc(query_input_term=query_input)
     try:
@@ -149,6 +182,13 @@ def get_expert_score_per_term(query, expert_id):
     expert_score_for_this_query_term = foreground_score + background_score
     return expert_score_for_this_query_term
 
+
+
+"""
+Overall, the following code section is responsible for analyzing expert ratings for a list of queries. 
+It iterates through each query and, for each expert, calculates the overall rating based on individual query terms. 
+The results are then stored in a JSON file named model_two_expertlevel_ranking.dict.
+"""
 
 candidates_scores_expertlevel = (
     {}
