@@ -1,4 +1,3 @@
-# import requests
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
@@ -9,6 +8,46 @@ import os
 import json
 
 OUTPUT_DIR = "web_out"
+FILE = "data.json"
+
+driver = webdriver.Remote("http://localhost:4444", options=webdriver.ChromeOptions())
+
+with open(os.path.join(OUTPUT_DIR, FILE), "r") as file:
+  json_data = file.read()
+        
+data_dict = json.loads(json_data)
+
+wait = WebDriverWait(driver, 10)
+
+for page, links in data_dict.items():
+  i = 0
+  for url in links:
+    try:
+      
+      # Navigate to the question url
+      driver.get(url)
+      
+      id = f"{page}_{str(i)}"
+      
+      topic_tags = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "content-topic-tags")))
+      
+      topic_tags = topic_tags.text.split("\n")
+      
+      content_question = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "question")))
+    
+      
+    
+      i = i + 1
+      
+    except Exception as e:
+      # Handle any exceptions that may occur
+      print(f"An error occurred: {e}")
+      continue
+      
+driver.quit()
+        
+      
+        
 
 URL = "https://www.avvo.com"
 PATH = "/topics/bankruptcy/advice"
