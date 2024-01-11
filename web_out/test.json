@@ -6,14 +6,11 @@
       }
     },
     {
-      "question": {
-        "topic_tags": ["Bankruptcy", "Chapter 7 bankruptcy"],
-        "title": "How likely is it I will be prosecuted?",
-        "body": "I am roughly $30k in credit card debt. About a year ago I had left my job and applied for two credit cards and stated on the application I was employed. I have several other cards that have defaulted but those applications were accurate, the ouch they were close to maxed at the time. I had money from my retirement that I was using to pay my bills and pay more than the minimum balance believing I would soon be employed with similar income. I finally got a job a few months later, but with a significant pay cut. After a couple of months I realized I wasn’t going to be able to keep up with everything (cards maxed out at this point) so I enrolled in a debt relief program (changed midstream to another company). This has ruined my credit and now I am considering filing for bankruptcy. I haven’t paid my credit cards in 6 months. How likely is it that they will discover I wasn’t truthful on my applications during the bankruptcy process, and if so, how likely is it that I will be prosecuted and go to jail? I know I’ve made a lot of stupid mistakes, but honestly thought I could handle the debt. I think bankruptcy is the best option if the risk is low, otherwise I may have to continue this way",
-        "location": "Asked in San Francisco, CA",
-        "date": "January 7, 2024 at 12:49am",
-        "answers": "3 answers"
-      },
+      "topic_tags": ["Bankruptcy", "Chapter 7 bankruptcy"],
+      "title": "How likely is it I will be prosecuted?",
+      "body": "I am roughly $30k in credit card debt. About a year ago I had left my job and applied for two credit cards and stated on the application I was employed. I have several other cards that have defaulted but those applications were accurate, the ouch they were close to maxed at the time. I had money from my retirement that I was using to pay my bills and pay more than the minimum balance believing I would soon be employed with similar income. I finally got a job a few months later, but with a significant pay cut. After a couple of months I realized I wasn’t going to be able to keep up with everything (cards maxed out at this point) so I enrolled in a debt relief program (changed midstream to another company). This has ruined my credit and now I am considering filing for bankruptcy. I haven’t paid my credit cards in 6 months. How likely is it that they will discover I wasn’t truthful on my applications during the bankruptcy process, and if so, how likely is it that I will be prosecuted and go to jail? I know I’ve made a lot of stupid mistakes, but honestly thought I could handle the debt. I think bankruptcy is the best option if the risk is low, otherwise I may have to continue this way",
+      "location": "Asked in San Francisco, CA",
+      "date": "January 7, 2024 at 12:49am",
       "answers": [
         {
           "lawyer_name": "Derek R. Caldwell",
@@ -41,14 +38,11 @@
       }
     },
     {
-      "question": {
-        "topic_tags": ["Another Tag"],
-        "title": "Another Question Title",
-        "body": "Another question body.",
-        "location": "Asked in Another Location",
-        "date": "Another Date",
-        "answers": "2 answers"
-      },
+      "topic_tags": ["Another Tag"],
+      "title": "Another Question Title",
+      "body": "Another question body.",
+      "location": "Asked in Another Location",
+      "date": "Another Date",
       "answers": [
         {
           "lawyer_name": "Another Lawyer",
