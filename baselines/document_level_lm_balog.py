@@ -4,7 +4,7 @@ from utils.text_analyzer import TextAnalyzer
 CF_ALL_TERMS_EXPERT_LEVEL = 3443922
 Count_of_all_answers = 33670
 from elasticsearch import Elasticsearch
-from utils.elasticsearch import ElasticSearch as elasticsearch
+from utils.ariah_elasticsearch import ElasticSearch as elasticsearch
 
 es = Elasticsearch(urls="http://localhost", port="9200", timeout=600)
 text_analyzer = TextAnalyzer()

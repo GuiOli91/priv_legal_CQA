@@ -6,11 +6,20 @@ class ElasticSearch:
     def __init__(self):
         # configure elasticsearch
         config = {"http://localhost": "9200"}
+                  #"api_key": "Yl8yNTdZd0JSWU1sRUE2SHJvUjc6RTR6Nl9fWkVSSzZKSVN6ZkZtdHZldw==",
+                  #"use_ssl": True,
+                  #"verify_certs": True,
+                  #"ca_certs": "http_ca.crt"}
         self.es = elasticsearch.Elasticsearch(
             [
                 config,
             ],
             timeout=300,
+            api_key = "Yl8yNTdZd0JSWU1sRUE2SHJvUjc6RTR6Nl9fWkVSSzZKSVN6ZkZtdHZldw==",
+            use_ssl=True,
+            verify_certs=True,
+            ca_certs="http_ca.crt",
+            
         )
         self.last_scroll_id = None
 
