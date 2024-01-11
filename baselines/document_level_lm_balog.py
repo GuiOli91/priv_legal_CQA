@@ -19,6 +19,16 @@ if Sampling:
 
 
 def find_top_1000_answers_for_query(query):
+    """
+    Retrieves the top 1000 answers from Elasticsearch based on the given query.
+
+    Args:
+        query (str): The query for which the top answers are retrieved.
+
+    Returns:
+        list: A list of hits containing the top 1000 answers matching the query in Elasticsearch.
+    """
+
     es = elasticsearch()
     query = query.lower()
     bool_query = {
@@ -36,6 +46,16 @@ def find_top_1000_answers_for_query(query):
 
 
 def find_an_doc_id_that_has_specific_query_term(term):
+    """
+    Finds the document ID that contains a specific query term.
+
+    Args:
+        term (str): The query term for which the document ID is found.
+
+    Returns:
+        str: The document ID containing the specified query term.
+    """
+
     print("find_an_doc_id_that_has_specific_query_term term:", term)
     es = elasticsearch()
     term = term.lower()
@@ -50,6 +70,16 @@ def find_an_doc_id_that_has_specific_query_term(term):
 
 
 def get_p_tc_doclevel(query_input_term):
+    """
+    Calculates the term frequency probability at the document level for a specific query term.
+
+    Args:
+        query_input_term (str): The query term for which the term frequency probability is calculated.
+
+    Returns:
+        float: The term frequency probability at the document level for the specific query term.
+    """
+
     query_input_term = query_input_term.lower()
     doc_id_for_calculate_stats = find_an_doc_id_that_has_specific_query_term(
         query_input_term
@@ -71,6 +101,11 @@ def get_p_tc_doclevel(query_input_term):
     p_tc_for_query_term = query_term_freq_in_collection / total_terms_fre_in_collection
     return p_tc_for_query_term
 
+"""
+In summary, the following code is performing an analysis where it assigns scores to each expert based on the relevance of their answers to a set of queries. 
+The scoring takes into account both term frequencies and document-level parameters. 
+The results are stored as expert rankings and document scores for further analysis or reference.
+"""
 
 candidates_scores_doclevel = (
     {}
