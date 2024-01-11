@@ -1,0 +1,66 @@
+[
+    {
+      "index": {
+        "_index": "your_index_name",
+        "_type": "_doc"
+      }
+    },
+    {
+      "question": {
+        "topic_tags": ["Bankruptcy", "Chapter 7 bankruptcy"],
+        "title": "How likely is it I will be prosecuted?",
+        "body": "I am roughly $30k in credit card debt. About a year ago I had left my job and applied for two credit cards and stated on the application I was employed. I have several other cards that have defaulted but those applications were accurate, the ouch they were close to maxed at the time. I had money from my retirement that I was using to pay my bills and pay more than the minimum balance believing I would soon be employed with similar income. I finally got a job a few months later, but with a significant pay cut. After a couple of months I realized I wasn’t going to be able to keep up with everything (cards maxed out at this point) so I enrolled in a debt relief program (changed midstream to another company). This has ruined my credit and now I am considering filing for bankruptcy. I haven’t paid my credit cards in 6 months. How likely is it that they will discover I wasn’t truthful on my applications during the bankruptcy process, and if so, how likely is it that I will be prosecuted and go to jail? I know I’ve made a lot of stupid mistakes, but honestly thought I could handle the debt. I think bankruptcy is the best option if the risk is low, otherwise I may have to continue this way",
+        "location": "Asked in San Francisco, CA",
+        "date": "January 7, 2024 at 12:49am",
+        "answers": "3 answers"
+      },
+      "answers": [
+        {
+          "lawyer_name": "Derek R. Caldwell",
+          "answer_text": "I agree that it is unlikely the credit card company who seek to have you prosecuted. It is possible they could seek to have the debts on those cards declared nondischargeable in your bankruptcy, but that is also unlikely unless you've made a lot of charges in the 90 days prior to the filing of your bankruptcy.",
+          "help_count": "Helpful (0)"
+        },
+        {
+          "lawyer_name": "Michael John Primus",
+          "answer_text": "I understand your concern but I do not think this will come up as an issue. Credit card companies almost never challenge a bankruptcy and when they do it relates to charges within 90 days of the bankruptcy. Seriously.",
+          "help_count": "Helpful (0)\n1 lawyer agrees",
+          "agree_lawyers": "1 lawyer agrees"
+        },
+        {
+          "lawyer_name": "Malcolm Ruthven",
+          "answer_text": "My best guess is that the credit card company won't even look at your credit application, much less find out that you were unemployed at that time. Also, I've never heard of submitting an erroneous credit card application being prosecuted as a crime.",
+          "help_count": "Helpful (0)\n1 lawyer agrees",
+          "agree_lawyers": "1 lawyer agrees"
+        }
+      ]
+    },
+    {
+      "index": {
+        "_index": "your_index_name",
+        "_type": "_doc"
+      }
+    },
+    {
+      "question": {
+        "topic_tags": ["Another Tag"],
+        "title": "Another Question Title",
+        "body": "Another question body.",
+        "location": "Asked in Another Location",
+        "date": "Another Date",
+        "answers": "2 answers"
+      },
+      "answers": [
+        {
+          "lawyer_name": "Another Lawyer",
+          "answer_text": "Another answer.",
+          "help_count": "Helpful (1)"
+        },
+        {
+          "lawyer_name": "Yet Another Lawyer",
+          "answer_text": "Yet another answer.",
+          "help_count": "Helpful (2)"
+        }
+      ]
+    }
+  ]
+  
